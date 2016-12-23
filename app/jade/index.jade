@@ -1,0 +1,124 @@
+extends ./tmp/_template.jade
+block title
+	title Softmotions
+block content
+	section#top(class="section section--top")
+		.container
+			h1(class="title title--h1 title--center title--offset title--white") The scalable content management system.
+			.arrow-down
+	section#ncms(class="section section--ncms")
+		.container
+			h2(class="title title--h1 title--center title--offset title--blue")
+				span nCMS
+			.cms-text Full featured CMS with rich multimedia capabilities for large user groups. Used in high loaded http://nsu.ru website and in few commercial projects.
+			ul.b-cms-list.cms
+				li.cms__item
+					.cms__ico
+						span 1
+					.cms__text 100% content site can be edited with nCMS GUI
+				li.cms__item
+					.cms__ico
+						span 2
+					.cms__text 100% Support of hundreds of concurrent users
+				li.cms__item
+					.cms__ico
+						span 3
+					.cms__text Multi-site/domain management
+				li.cms__item
+					.cms__ico
+						span 4
+					.cms__text Marketing tools and leads management
+			.button-wrap
+				a.button(href="#") Details
+	section#projects(class="section section--blue section--projects")
+		.container
+			h2(class="title title--h1 title--center title--offset title--white")
+				span Projects
+			ul.b-project-list.project
+				li.project__item
+					.project__mark Finance
+					.project__title Frontend and integration layer of CRM for online financial service
+					.project__text UIS is a bunch of projects used in some universities in Russia, included corporate portal and SSO system.
+				li.project__item
+					.project__mark Education
+					.project__title UIS —The ERP system for universities
+					.project__text UIS is a bunch of projects used in some universities in Russia, included corporate portal and SSO system. Developed since 2006 and contains over 2 million source code lines. Technologies: Full stack of JavaEE
+				li.project__item
+					.project__mark Telecommunications
+					.project__title Nethouse
+					.project__text Network management, billing and payment system for ISP.
+				li.project__item
+					.project__mark Music
+					.project__title Nettymusic
+					.project__text Nettymusic is a rich web based music player and radio streaming solution.
+			.button-wrap
+				a.button(href="#") More projects
+	section#opensource(class="section section--opensource")
+		.container
+			h2(class="title title--h1 title--center title--offset title--blue")
+				span Open-source
+			.b-carousel.carousel
+				.carousel-arrow
+					.carousel-arrow__left
+					.carousel-arrow__right
+				ul.carousel-list.js-carousel
+					li.carousel__item.opensource
+						.carousel__left
+							img.opensource__src(src="../images/SVG/Slide_pic_1.svg" alt="" title="")
+						.carousel__right
+							.opensource__title EJDB Embedded JSON database engine
+							.opensource__text 
+								p EJDB is the embeddable (in-process) database engine designed for querying collections of JSON documents and persisting data. EJDB is implemented as a C library based on TokyoCabinet key-value storage engine. EJDB design is inspired by Mongodb and follows the same philosophy, especially for the query language.
+								p <strong>Project technologies:</strong> C, Cmake 
+								p <strong>EJDB language bindings developed by our team:</strong> Nodejs, Python, .Net, (C#), Ruby, Lua, Java.
+							a.button(href="#") Learn more
+					li.carousel__item.opensource
+						.carousel__left
+							img.opensource__src(src="../images/SVG/Slide_pic_1.svg" alt="" title="")
+						.carousel__right
+							.opensource__title EJDB Embedded JSON database engine
+							.opensource__text 
+								p EJDB is the embeddable (in-process) database engine designed for querying collections of JSON documents and persisting data. EJDB is implemented as a C library based on TokyoCabinet key-value storage engine. EJDB design is inspired by Mongodb and follows the same philosophy, especially for the query language.
+								p <strong>Project technologies:</strong> C, Cmake 
+								p <strong>EJDB language bindings developed by our team:</strong> Nodejs, Python, .Net, (C#), Ruby, Lua, Java.
+							a.button(href="#") Learn more
+							
+				
+	section#technologies(class="section section--technologies")
+		.container.container--border
+			h2(class="title title--h1 title--center title--offset title--blue")
+				span Technologies
+			ul.b-technologie-list.technologie
+				li.technologie__item
+					img.technologie__src(src="../images/logo/1.jpg" title="" alt="")
+				li.technologie__item
+					img.technologie__src(src="../images/logo/2.jpg" title="" alt="")
+				li.technologie__item
+					img.technologie__src(src="../images/logo/3.jpg" title="" alt="")
+				li.technologie__item
+					img.technologie__src(src="../images/logo/4.jpg" title="" alt="")
+				li.technologie__item
+					img.technologie__src(src="../images/logo/5.jpg" title="" alt="")
+				li.technologie__item
+					img.technologie__src(src="../images/logo/6.jpg" title="" alt="")
+				li.technologie__item
+					img.technologie__src(src="../images/logo/7.jpg" title="" alt="")
+				li.technologie__item
+					img.technologie__src(src="../images/logo/8.jpg" title="" alt="")
+	section#contacts(class="section section--contacts")
+		.container
+			.contacts
+				h2(class="title title--h1 title--center title--blue")
+					span Contacts
+				.contacts__email Info@softmotions.com
+		#map
+			
+				
+	footer.footer
+		.container
+			.footer__inner
+				.copyright &copy; Softmotions, 2016
+				.developers
+					a.developers__link(href="http://machineheads.ru/")
+						| Разработка сайта <img src="../images/SVG/MH.svg" class="devel" alt="Machineheads"> Machineheads
+block hidden

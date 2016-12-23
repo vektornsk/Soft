@@ -1,0 +1,37 @@
+include _header.jade
+include _footer.jade
+
+doctype
+html(lang='ru')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='x-ua-compatible', content ie='edge')
+		block title
+			title Default title
+		meta(name='description', content='')
+		link(rel='shortcut icon', href='../images/favicon/favicon.ico', type='image/x-icon')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		// LibStyle
+		- var libStyle = ['normalize.css', 'slick.css'];
+		for libcss in libStyle	
+			link(rel='stylesheet' href='../css/libcss/#{libcss}')
+		// Style
+		//- link(rel='stylesheet', href='../css/bootstrap.css')
+		link(rel='stylesheet', href='../css/style.css')
+
+	body
+		#wrapper
+			header
+				.container
+					+header
+			block content
+		.hidden
+			block hidden
+			
+		// Javascript
+		- var libJs = ['jquery.js', 'slick.js'];
+		for libjs in libJs
+			script(src='../js/lib/#{libjs}')
+			
+		script(src='../js/main.js')
+		script(src='//maps.googleapis.com/maps/api/js?key=AIzaSyAZxX0nlYpytcZcFKROkcyDBDMe62epCPo')

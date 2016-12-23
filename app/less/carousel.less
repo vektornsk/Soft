@@ -1,0 +1,49 @@
+/* carousel
+================================================================================*/
+.b-carousel {
+	position: relative;
+}
+
+.carousel {
+		&__item {
+			display: table;
+		}
+		&__left {
+			display: table-cell;
+			vertical-align: middle;
+			width: 360px;
+		}
+		&__right {
+			display: table-cell;
+			vertical-align: top;
+			width: calc(~'100% - 360px');
+		}
+}
+
+.carousel-arrow {
+	.row-flex();
+	position: absolute;
+	z-index: 1;
+	top: -5px;
+	right: 0;
+	&__left {
+		width: 29px;
+		height: 35px;
+		margin: 0 15px 0 0;
+		background: url(../images/SVG/Arrow_left.svg) no-repeat center 0;
+		cursor: pointer;
+			&:hover {
+				background-position: center -42px;
+			}
+	}
+	&__right {
+		width: 29px;
+		height: 35px;
+		margin: 0 0 0 15px;
+		background: url(../images/SVG/Arrow_right.svg) no-repeat center 0;
+		cursor: pointer;
+			&:hover {
+				background-position: center -42px;
+			}
+	}
+}
