@@ -24,5 +24,13 @@
   "dependencies": {},
   "main": "gulpfile.js",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vektornsk/Soft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vektornsk/Soft/issues"
+  },
+  "homepage": "https://github.com/vektornsk/Soft#readme",
   "description": ""
 }

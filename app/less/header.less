@@ -9,11 +9,48 @@ header {
 
 .header {
 	.row-flex();
+	.align-items(center);
 	height: 130px;
 	.justify-content(space-between);
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .logo {
-	margin-top: auto;
-	margin-bottom: auto;
+		&__src {
+			width: 243px;
+			height: 41px;
+				&--fix {
+					display: none;
+					width: 193px;
+					height: 32px;
+				}
+		}
+}
+
+/*fix header
+===============================================================================*/
+header.fix {
+	width: 100%;
+	position: fixed;
+	background: @color-white;
+	border-bottom: 2px solid @color-gray;
+	z-index: 10;
+	top: 0;
+	left: 0;
+		.header {
+			height: 50px;
+		}
+		.logo__src {
+			display: none;
+				&--fix {
+					display: block;
+				}
+		}
+		.menu__link {
+			color: @color-blue;
+				&:after {
+					background: @color-blue;
+				}
+		}
 }

@@ -1,12 +1,31 @@
 /* menu
 ===============================================================================*/
+nav {
+
+}
+
+.menu-burger {
+
+}
 
 .menu {
 	.row-flex();
-	margin: auto 0;
+	margin-left: 0;
+	margin-right: 0;
 		&__item {
 			&:not(:last-child) {
 				margin-right: 60px;
+			}
+			&.active {
+				.menu__link {
+					&:after {
+				    top: 20px;
+				    background: @color-blue;
+				    opacity: 1;
+						transform: translateY(0px) !important;
+						visibility: visible;
+					}
+				}
 			}
 		}
 		&__link {
@@ -18,20 +37,23 @@
 			position: relative;
 				&:after {
 					position: absolute;
-			    top: 100%;
+			    top: 20px;
 			    left: 0;
 			    width: 100%;
 			    height: 2px;
 			    background: rgba(256,256,256,1);
 			    content: '';
 			    opacity: 0;
-					transition: opacity 0.3s, transform 0.3s;
 					transform: translateY(10px);
+					visibility: hidden;
 				}
 				&:hover {
 					&:after {
+						// transition: opacity 0.3s, transform 0.3s;
+						transition: all .3s ease-out;
 						opacity: 1;
 						transform: translateY(0px);
+						visibility: visible;
 					}
 				}
 		}

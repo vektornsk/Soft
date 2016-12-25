@@ -53,13 +53,13 @@
 
 .container(){
     max-width: 1170px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
 
     @media screen and (max-width: @break_lg){
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     @media screen and (max-width: @break_md){
@@ -719,5 +719,13 @@
                 background: @background;
             }
         }
+    }
+}
+
+.clearfix(){
+    &::after{
+        display: block;
+        content: "";
+        clear: both;
     }
 }
