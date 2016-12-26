@@ -117,10 +117,14 @@ nav {
 			z-index: 100;
 			padding: 140px 0 0 58px;
 			display: none;
-			transition: all 0.3s;
 		}
 		@media screen and (max-width: @break_xs){
 			width: 70vw;
 			padding: 70px 0 0 30px;
+		}
+		&.open {
+			right: 0;
+			display: block;
+			box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
 		}
 }
