@@ -10,8 +10,12 @@ header {
 .header {
 	.row-flex();
 	.align-items(center);
-	height: 130px;
 	.justify-content(space-between);
+	height: 110px;
+		@media screen and (max-width: @break_lg){
+			margin-left: 0;
+			margin-right: 0;
+		}
 }
 
 .logo {

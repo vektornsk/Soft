@@ -1,7 +1,7 @@
 @columns: 12;
 @offset: 30px;
 
-@break_lg: 1170px;
+@break_lg: 1050px;
 @break_md: 960px;
 @break_sm: 780px;
 @break_xs: 560px;
@@ -58,13 +58,13 @@
     margin: 0 auto;
 
     @media screen and (max-width: @break_lg){
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 28px;
+        padding-right: 28px;
     }
 
     @media screen and (max-width: @break_md){
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 28px;
+        padding-right: 28px;
     }
 
     @media screen and (max-width: @break_sm){
@@ -702,15 +702,15 @@
     height: 100vh;
     position: fixed;
     width: 100%;
-    
+
     > div{
         height: inherit;
         .wrapper();
-        
+
         > div{
             height: inherit;
             .row-flex();
-            
+
             > div{
                 .col();
                 .col-1();

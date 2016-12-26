@@ -1,0 +1,35 @@
+/* FOOTER
+================================================================================*/
+.footer {
+	height: 38px;
+	background: @color-blue-dark;
+		@media screen and (max-width: @break_lg){
+			padding: 0 18px;
+		}
+		&__inner {
+			.row-flex();
+			.justify-content(space-between);
+			height: inherit;
+		}
+}
+
+.copyright {
+	margin-top: auto;
+	margin-bottom: auto;
+	color: #9eadca;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.developers {
+	margin-top: auto;
+	margin-bottom: auto;
+		&__link {
+			color: #9eadca;
+			font-size: 16px;
+			line-height: 1;
+				&:hover {
+					text-decoration: underline;
+				}
+		}
+}

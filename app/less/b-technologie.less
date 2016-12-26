@@ -5,6 +5,10 @@
 	.row-flex();
 	margin-left: -30px;
 	margin-right: -30px;
+	@media screen and (max-width: @break_lg){
+		margin-left: -8px;
+		margin-right: -8px;
+	}
 }
 .technologie {
 		&__item {
@@ -22,5 +26,7 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+			max-width: 100%;
+			height: auto;
 		}
 }

@@ -6,6 +6,9 @@
 
 .carousel {
 	padding: 0 30px;
+		@media screen and (max-width: @break_lg){
+			padding: 0 10px;
+		}
 		&__item {
 			display: table;
 		}
@@ -13,11 +16,17 @@
 			display: table-cell;
 			vertical-align: middle;
 			width: 345px;
+				@media screen and (max-width: @break_lg){
+					width: 320px;
+				}
 		}
 		&__right {
 			display: table-cell;
 			vertical-align: top;
 			width: calc(~'100% - 345px');
+				@media screen and (max-width: @break_lg){
+					width: calc(~'100% - 320px');
+				}
 		}
 }
 

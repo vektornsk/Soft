@@ -4,12 +4,14 @@
 
 @import "header";
 @import "menu";
+@import "section";
 @import "b-cms";
 @import "b-projects";
 @import "carousel";
 @import "b-opensource";
 @import "b-technologie";
-@import "contacts";
+@import "b-contacts";
+@import "footer";
 
 .container {
 	.container();
@@ -19,52 +21,19 @@
 		}
 }
 // TODO: убрать
-// body {
-// 	overflow-x: hidden;
-// }
-// body:after {
-// 	content: '';
-// 	position: fixed;
-// 	top: 0;
-// 	left: 50%;
-// 	transform: translateX(-50%);
-// 	width: 1px;
-// 	height: 100vh;
-// 	background: red;
-// }
-/* FOOTER
-================================================================================*/
-.footer {
-	height: 38px;
-	background: @color-blue-dark;
-		&__inner {
-			.row-flex();
-			.justify-content(space-between);
-			height: inherit;
-		}
+body {
+	overflow-x: hidden;
 }
-
-.copyright {
-	margin-top: auto;
-	margin-bottom: auto;
-	color: #9eadca;
-	font-size: 16px;
-	line-height: 1;
+body:after {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1px;
+	height: 100vh;
+	background: red;
 }
-
-.developers {
-	margin-top: auto;
-	margin-bottom: auto;
-		&__link {
-			color: #9eadca;
-			font-size: 16px;
-			line-height: 1;
-				&:hover {
-					text-decoration: underline;
-				}
-		}
-}
-
 
 /* TITLE
 ================================================================================*/
@@ -79,6 +48,9 @@ h1,h2,h3,h4,h5,h6{
 			font-size: 48px;
 			line-height: 1;
 			font-family: @font-second;
+				@media screen and (max-width: @break_lg){
+					font-size: 42px;
+				}
 		}
 		&--h2 {
 
@@ -166,28 +138,7 @@ h1,h2,h3,h4,h5,h6{
 		&:hover {
 			background-position: 0 -85px;
 		}
-}
-
-
-/* SECTION
-================================================================================*/
-
-.section {
-	min-height: 790px;
-	background: @color-white;
-	padding-bottom: 60px;
-		&--top {
-			background: linear-gradient(to bottom, @color-blue 0%,@color-blue-light 100%);
-			height: 100vh;
-				.title {
-					padding-top: 45vh;
-				}
-		}
-		&--contacts {
-			min-height: 670px;
-			padding-bottom: 0;
-		}
-		&--blue {
-			background: @color-blue url(../images/bg.png) no-repeat 105% 150px ;
+		@media screen and (max-width: @break_lg){
+			bottom: 20px;
 		}
 }
