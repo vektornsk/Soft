@@ -21,19 +21,19 @@
 		}
 }
 // TODO: убрать
-body {
-	overflow-x: hidden;
-}
-body:after {
-	content: '';
-	position: fixed;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 1px;
-	height: 100vh;
-	background: red;
-}
+// body {
+// 	overflow-x: hidden;
+// }
+// body:after {
+// 	content: '';
+// 	position: fixed;
+// 	top: 0;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	width: 1px;
+// 	height: 100vh;
+// 	background: red;
+// }
 
 /* TITLE
 ================================================================================*/
@@ -51,6 +51,9 @@ h1,h2,h3,h4,h5,h6{
 				@media screen and (max-width: @break_lg){
 					font-size: 42px;
 				}
+				@media screen and (max-width: @break_xs){
+					font-size: 24px;
+				}
 		}
 		&--h2 {
 
@@ -60,6 +63,9 @@ h1,h2,h3,h4,h5,h6{
 		}
 		&--offset {
 			padding-top: 130px;
+			@media screen and (max-width: @break_xs){
+				padding-top: 110px;
+			}
 		}
 		&--white {
 			color: @color-white;
@@ -68,6 +74,9 @@ h1,h2,h3,h4,h5,h6{
 					margin-bottom: 70px;
 					text-align: center;
 					position: relative;
+						@media screen and (max-width: @break_xs){
+							margin-bottom: 40px;
+						}
 						&::after {
 							content: '';
 							position: absolute;
@@ -77,6 +86,10 @@ h1,h2,h3,h4,h5,h6{
 							left: 50%;
 							bottom: -30px;
 							transform: translate(-50%, 0);
+							@media screen and (max-width: @break_xs){
+								width: 155px;
+								bottom: -23px;
+							}
 						}
 				}
 		}
@@ -87,6 +100,9 @@ h1,h2,h3,h4,h5,h6{
 					margin-bottom: 70px;
 					text-align: center;
 					position: relative;
+						@media screen and (max-width: @break_xs){
+							margin-bottom: 40px;
+						}
 						&::after {
 							content: '';
 							position: absolute;
@@ -96,6 +112,10 @@ h1,h2,h3,h4,h5,h6{
 							left: 50%;
 							bottom: -30px;
 							transform: translate(-50%, 0);
+							@media screen and (max-width: @break_xs){
+								width: 155px;
+								bottom: -23px;
+							}
 						}
 				}
 		}
@@ -123,6 +143,9 @@ h1,h2,h3,h4,h5,h6{
 	font-family: @font-main-bold;
 	font-size: 20px;
 	user-select: none;
+		@media screen and (max-width: @break_xs){
+			width: 210px;
+		}
 		&:hover {
 			background: @color-blue-light--hover;
 		}
@@ -141,10 +164,17 @@ h1,h2,h3,h4,h5,h6{
 	background: url(../images/SVG/Down_button.svg) no-repeat 0 0;
 	cursor: pointer;
 	user-select: none;
-		&:hover {
-			background-position: 0 -85px;
-		}
 		@media screen and (max-width: @break_lg){
 			bottom: 40px;
 		}
+		@media screen and (max-width: @break_xs){
+			bottom: 20px;
+			width: 45px;
+			height: 45px;
+	    background-size: 45px 88px;
+		}
+		&:hover {
+			background-position: 0 -85px;
+		}
+
 }

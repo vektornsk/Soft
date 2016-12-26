@@ -16,12 +16,19 @@ header {
 			margin-left: 0;
 			margin-right: 0;
 		}
+		@media screen and (max-width: @break_xs){
+			height: 65px;
+		}
 }
 
 .logo {
 		&__src {
 			width: 243px;
 			height: 41px;
+			@media screen and (max-width: @break_xs){
+				width: 193px;
+				height: 32px;
+			}
 				&--fix {
 					display: none;
 					width: 193px;

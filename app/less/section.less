@@ -11,13 +11,18 @@
 		&--top {
 			background: linear-gradient(to bottom, @color-blue 0%,@color-blue-light 100%);
 			height: 100vh;
+			min-height: 0;
 				.title {
 					padding-top: 45vh;
+					line-height: 1.4;
 				}
 		}
 		&--contacts {
 			min-height: 670px;
 			padding-bottom: 0;
+			@media screen and (max-width: @break_xs){
+				min-height: 500px;
+			}
 		}
 		&--blue {
 			background: @color-blue url(../images/bg.png) no-repeat 105% 150px;
@@ -26,6 +31,9 @@
 			}
 			@media screen and (max-width: @break_sm){
 				background-position: 360px 200px;
+			}
+			@media screen and (max-width: @break_xs){
+				background: @color-blue;
 			}
 		}
 }

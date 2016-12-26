@@ -6,10 +6,17 @@
 		@media screen and (max-width: @break_lg){
 			padding: 0 18px;
 		}
+		@media screen and (max-width: @break_xs){
+			padding: 20px 15px;
+			height: 90px;
+		}
 		&__inner {
 			.row-flex();
 			.justify-content(space-between);
 			height: inherit;
+			@media screen and (max-width: @break_xs){
+				flex-direction: column;
+			}
 		}
 }
 
@@ -19,6 +26,9 @@
 	color: #9eadca;
 	font-size: 16px;
 	line-height: 1;
+		@media screen and (max-width: @break_xs){
+			font-size: 14px;
+		}
 }
 
 .developers {
@@ -28,6 +38,9 @@
 			color: #9eadca;
 			font-size: 16px;
 			line-height: 1;
+				@media screen and (max-width: @break_xs){
+					font-size: 14px;
+				}
 				&:hover {
 					text-decoration: underline;
 				}

@@ -11,6 +11,9 @@
 			margin-bottom: 60px;
 			width: 94%;
 		}
+		@media screen and (max-width: @break_xs){
+			font-size: 16px;
+		}
 }
 
 .b-cms-list {
@@ -23,6 +26,10 @@
 		padding: 0 65px;
 		margin-bottom: 20px;
 	}
+	@media screen and (max-width: @break_xs){
+		padding: 0 40px;
+		margin-bottom: 0;
+	}
 }
 
 .cms {
@@ -30,6 +37,7 @@
 			.col();
 			.col-3();
 			.col-sm-6();
+			.col-xs-12();
 			text-align: center;
 			position: relative;
 				@media screen and (max-width: @break_sm){
@@ -67,9 +75,13 @@
 			font-size: 18px;
 			line-height: 1.5;
 			color: @color-black;
-			@media screen and (max-width: @break_sm){
-				width: 75%;
-				margin: 0 auto;
-			}
+				@media screen and (max-width: @break_sm){
+					width: 75%;
+					margin: 0 auto;
+				}
+				@media screen and (max-width: @break_xs){
+					font-size: 16px;
+					width: 100%;
+				}
 		}
 }

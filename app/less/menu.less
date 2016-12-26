@@ -27,6 +27,9 @@ nav {
 	@media screen and (max-width: @break_sm){
 		display: block;
 	}
+	@media screen and (max-width: @break_xs){
+		top: 12px;
+	}
 }
 
 .menu {
@@ -40,6 +43,9 @@ nav {
 			@media screen and (max-width: @break_sm){
 				margin-right: 0 !important;
 				margin-bottom: 35px;
+			}
+			@media screen and (max-width: @break_xs){
+				margin-bottom: 28px;
 			}
 			&:not(:last-child) {
 				margin-right: 53px;
@@ -70,6 +76,9 @@ nav {
 					color: @color-blue;
 					font-size: 42px;
 					opacity: 0.5;
+				}
+				@media screen and (max-width: @break_xs){
+					font-size: 24px;
 				}
 				&:after {
 					position: absolute;
@@ -108,5 +117,10 @@ nav {
 			z-index: 100;
 			padding: 140px 0 0 58px;
 			display: none;
+			transition: all 0.3s;
+		}
+		@media screen and (max-width: @break_xs){
+			width: 70vw;
+			padding: 70px 0 0 30px;
 		}
 }
