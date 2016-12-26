@@ -9,6 +9,9 @@
 		@media screen and (max-width: @break_lg){
 			padding: 0 10px;
 		}
+		@media screen and (max-width: @break_sm){
+			padding: 0;
+		}
 		&__item {
 			display: table;
 		}
@@ -19,6 +22,10 @@
 				@media screen and (max-width: @break_lg){
 					width: 320px;
 				}
+				@media screen and (max-width: @break_sm){
+					width: 0;
+					display: none;
+				}
 		}
 		&__right {
 			display: table-cell;
@@ -26,6 +33,9 @@
 			width: calc(~'100% - 345px');
 				@media screen and (max-width: @break_lg){
 					width: calc(~'100% - 320px');
+				}
+				@media screen and (max-width: @break_sm){
+					width: 100%;
 				}
 		}
 }
@@ -36,6 +46,9 @@
 	z-index: 1;
 	top: -5px;
 	right: 0;
+	@media screen and (max-width: @break_sm){
+		right: 8px;
+	}
 	&__left {
 		width: 29px;
 		height: 35px;

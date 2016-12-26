@@ -7,7 +7,10 @@
 	max-width: 750px;
 	font-size: 18px;
 	line-height: 1.5;
-
+		@media screen and (max-width: @break_sm){
+			margin-bottom: 60px;
+			width: 94%;
+		}
 }
 
 .b-cms-list {
@@ -16,14 +19,22 @@
 	@media screen and (max-width: @break_lg){
 		margin-bottom: 70px;
 	}
+	@media screen and (max-width: @break_sm){
+		padding: 0 65px;
+		margin-bottom: 20px;
+	}
 }
 
 .cms {
 		&__item {
 			.col();
 			.col-3();
+			.col-sm-6();
 			text-align: center;
 			position: relative;
+				@media screen and (max-width: @break_sm){
+					margin-bottom: 50px;
+				}
 				&:not(:last-child):before {
 					content: '';
 					position: absolute;
@@ -32,6 +43,9 @@
 					width: 60%;
 					height: 2px;
 					background: @color-gray;
+						@media screen and (max-width: @break_sm){
+							content: none;
+						}
 				}
 		}
 		&__ico {
@@ -53,5 +67,9 @@
 			font-size: 18px;
 			line-height: 1.5;
 			color: @color-black;
+			@media screen and (max-width: @break_sm){
+				width: 75%;
+				margin: 0 auto;
+			}
 		}
 }
