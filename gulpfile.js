@@ -161,20 +161,20 @@ var settings = {
     },
     breakPoints: {
         lg: {
-            'width': '1170px',
+            'width': '1050px',
             'fields': '30px'
         },
         md: {
             'width': '960px',
-            'fields': '15px'
+            'fields': '28px'
         },
         sm: {
             'width': '780px',
-            'fields': '3%'
+            'fields': '24px'
         },
         xs: {
-            'width': '560px',
-            'fields': '2%'
+            'width': '760px',
+            'fields': '15px'
         }
         /*
         We can create any quantity of break points.
