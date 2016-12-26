@@ -53,13 +53,13 @@
 
 .container(){
     max-width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin: 0 auto;
 
     @media screen and (max-width: @break_lg){
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     @media screen and (max-width: @break_md){
@@ -702,15 +702,15 @@
     height: 100vh;
     position: fixed;
     width: 100%;
-
+    
     > div{
         height: inherit;
         .wrapper();
-
+        
         > div{
             height: inherit;
             .row-flex();
-
+            
             > div{
                 .col();
                 .col-1();
@@ -719,13 +719,5 @@
                 background: @background;
             }
         }
-    }
-}
-
-.clearfix(){
-    &::after{
-        display: block;
-        content: "";
-        clear: both;
     }
 }
