@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="25.429px" height="25.429px" viewBox="0 0 25.429 25.429" enable-background="new 0 0 25.429 25.429" xml:space="preserve">
+<pattern  x="-516.035" y="-542.266" width="33.489" height="33.489" patternUnits="userSpaceOnUse" id="New_Pattern_Swatch_1" viewBox="0 -33.489 33.489 33.489" overflow="visible">
+	<g>
+		<polygon fill="none" points="0,0 33.489,0 33.489,-33.489 0,-33.489 		"/>
+		<polygon fill="#19338E" points="33.489,0 0,0 0,-33.489 33.489,-33.489 		"/>
+	</g>
+</pattern>
+<path fill="url(#New_Pattern_Swatch_1)" d="M25.429,1.414L24.015,0l-11.3,11.3L1.414,0L0,1.414l11.3,11.3L0,24.015l1.414,1.414
+	l11.3-11.3l11.3,11.3l1.414-1.414l-11.3-11.3L25.429,1.414z"/>
+</svg>

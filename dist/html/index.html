@@ -3,30 +3,171 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content ie="edge">
-    <title>Главная</title>
+    <title>Softmotions</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LibStyle-->
     <link rel="stylesheet" href="../css/libcss/normalize.css">
+    <link rel="stylesheet" href="../css/libcss/slick.css">
     <!-- Style-->
-    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
     <div id="wrapper">
       <header>
-        <div class="header"></div>
+        <div class="container">
+          <div class="header">
+            <div class="logo"><a href="/" class="logo__link"><img src="../images/SVG/Logo_FS.svg" alt="" title="" class="logo__src"/><img src="../images/SVG/Logo_fix menu.svg" alt="" title="" class="logo__src logo__src--fix"/></a></div>
+            <nav>
+              <div class="menu-burger"></div>
+              <div class="menu-list">
+                <div class="menu-button"></div>
+                <ul class="menu">
+                  <li class="menu__item"><a href="#ncms" class="menu__link">nCMS</a></li>
+                  <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+                  <li class="menu__item"><a href="#opensource" class="menu__link">Open-source</a></li>
+                  <li class="menu__item"><a href="#technologies" class="menu__link">Technologies</a></li>
+                  <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
       </header>
-      <div class="container"></div>
+      <section id="top" class="section section--top">
+        <div class="container">
+          <h1 class="title title--h1 title--center title--offset title--white">The scalable content management system.</h1><a href="#ncms" class="arrow-down"></a>
+        </div>
+      </section>
+      <section id="ncms" class="section section--ncms">
+        <div class="container">
+          <h2 class="title title--h1 title--center title--offset title--blue"><span>nCMS</span></h2>
+          <div class="cms-text">Full featured CMS with rich multimedia capabilities for large user groups. Used in high loaded http://nsu.ru website and in few commercial projects.</div>
+          <ul class="b-cms-list cms">
+            <li class="cms__item">
+              <div class="cms__ico"><span>1</span></div>
+              <div class="cms__text">100% content site can be edited with nCMS GUI</div>
+            </li>
+            <li class="cms__item">
+              <div class="cms__ico"><span>2</span></div>
+              <div class="cms__text">Support of hundreds of concurrent users</div>
+            </li>
+            <li class="cms__item">
+              <div class="cms__ico"><span>3</span></div>
+              <div class="cms__text">Multi-site/domain management</div>
+            </li>
+            <li class="cms__item">
+              <div class="cms__ico"><span>4</span></div>
+              <div class="cms__text">Marketing tools and leads management</div>
+            </li>
+          </ul>
+          <div class="button-wrap"><a href="#" class="button">Details</a></div>
+        </div>
+      </section>
+      <section id="projects" class="section section--blue section--projects">
+        <div class="container">
+          <h2 class="title title--h1 title--center title--offset title--white"><span>Projects</span></h2>
+          <ul class="b-project-list project">
+            <li class="project__item">
+              <div class="project__mark">Finance</div>
+              <div class="project__title">Frontend and integration layer of CRM for online financial service</div>
+              <div class="project__text">UIS is a bunch of projects used in some universities in Russia, included corporate portal and SSO system.</div>
+            </li>
+            <li class="project__item">
+              <div class="project__mark">Education</div>
+              <div class="project__title">UIS —The ERP system for universities</div>
+              <div class="project__text">UIS is a bunch of projects used in some universities in Russia, included corporate portal and SSO system. Developed since 2006 and contains over 2 million source code lines.</div>
+            </li>
+            <li class="project__item">
+              <div class="project__mark">Telecommunications</div>
+              <div class="project__title">Nethouse</div>
+              <div class="project__text">Network management, billing and payment system for ISP.</div>
+            </li>
+            <li class="project__item">
+              <div class="project__mark">Music</div>
+              <div class="project__title">Nettymusic</div>
+              <div class="project__text">Nettymusic is a rich web based music player and radio streaming solution.</div>
+            </li>
+          </ul>
+          <div class="button-wrap"><a href="#" class="button">More projects</a></div>
+        </div>
+      </section>
+      <section id="opensource" class="section section--opensource">
+        <div class="container">
+          <h2 class="title title--h1 title--center title--offset title--blue"><span>Open-source</span></h2>
+          <div class="b-carousel carousel">
+            <div class="carousel-arrow">
+              <div class="carousel-arrow__left"></div>
+              <div class="carousel-arrow__right"></div>
+            </div>
+            <ul class="carousel-list js-carousel">
+              <li class="carousel__item opensource">
+                <div class="carousel__left"><img src="../images/SVG/Slide_pic_1.svg" alt="" title="" class="opensource__src"></div>
+                <div class="carousel__right">
+                  <div class="opensource__title">EJDB Embedded JSON database engine</div>
+                  <div class="opensource__text"> 
+                    <p>EJDB is the embeddable (in-process) database engine designed for querying collections of JSON documents and persisting data. EJDB is implemented as a C library based on TokyoCabinet key-value storage engine. EJDB design is inspired by Mongodb and follows the same philosophy, especially for the query language.</p>
+                    <p><strong>Project technologies:</strong> C, Cmake </p>
+                    <p><strong>EJDB language bindings developed by our team:</strong> Nodejs, Python, .Net, (C#), Ruby, Lua, Java.</p>
+                  </div>
+                  <div class="button-wrap button-wrap--left"><a href="#" class="button">Learn more</a></div>
+                </div>
+              </li>
+              <li class="carousel__item opensource">
+                <div class="carousel__left"><img src="../images/SVG/Slide_pic_1.svg" alt="" title="" class="opensource__src"></div>
+                <div class="carousel__right">
+                  <div class="opensource__title">EJDB Embedded JSON database engine</div>
+                  <div class="opensource__text"> 
+                    <p>EJDB is the embeddable (in-process) database engine designed for querying collections of JSON documents and persisting data. EJDB is implemented as a C library based on TokyoCabinet key-value storage engine. EJDB design is inspired by Mongodb and follows the same philosophy, especially for the query language.</p>
+                    <p><strong>Project technologies:</strong> C, Cmake </p>
+                    <p><strong>EJDB language bindings developed by our team:</strong> Nodejs, Python, .Net, (C#), Ruby, Lua, Java.</p>
+                  </div><a href="#" class="button">Learn more</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="technologies" class="section section--technologies">
+        <div class="container container--border">
+          <h2 class="title title--h1 title--center title--offset title--blue"><span>Technologies</span></h2>
+          <ul class="b-technologie-list technologie">
+            <li class="technologie__item"><img src="../images/logo/1.jpg" title="" alt="" class="technologie__src"></li>
+            <li class="technologie__item"><img src="../images/logo/2.jpg" title="" alt="" class="technologie__src"></li>
+            <li class="technologie__item"><img src="../images/logo/3.jpg" title="" alt="" class="technologie__src"></li>
+            <li class="technologie__item"><img src="../images/logo/4.jpg" title="" alt="" class="technologie__src"></li>
+            <li class="technologie__item"><img src="../images/logo/5.jpg" title="" alt="" class="technologie__src"></li>
+            <li class="technologie__item"><img src="../images/logo/6.jpg" title="" alt="" class="technologie__src"></li>
+            <li class="technologie__item"><img src="../images/logo/7.jpg" title="" alt="" class="technologie__src"></li>
+            <li class="technologie__item"><img src="../images/logo/8.jpg" title="" alt="" class="technologie__src"></li>
+          </ul>
+        </div>
+      </section>
+      <section id="contacts" class="section section--contacts">
+        <div class="container">
+          <div class="contacts">
+            <h2 class="title title--h1 title--center title--blue"><span>Contacts</span></h2>
+            <div class="contacts__email">Info@softmotions.com</div>
+          </div>
+        </div>
+        <div id="map"></div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="copyright">&copy; Softmotions, 2016</div>
+            <div class="developers"><a href="http://machineheads.ru/" class="developers__link">Разработка сайта <img src="../images/SVG/MH.svg" class="devel" alt="Machineheads"> Machineheads</a></div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <footer>
-      <div class="footer"></div>
-    </footer>
     <div class="hidden">
     </div>
     <!-- Javascript-->
     <script src="../js/lib/jquery.js"></script>
+    <script src="../js/lib/slick.js"></script>
     <script src="../js/main.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAZxX0nlYpytcZcFKROkcyDBDMe62epCPo"></script>
   </body>
 </html>
