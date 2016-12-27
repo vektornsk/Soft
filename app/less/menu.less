@@ -42,6 +42,12 @@ nav {
 			flex-direction: column;
 		}
 		&__item {
+				@media screen and (max-width: @break_sm){
+					margin-bottom: 35px;
+				}
+				@media screen and (max-width: @break_xs){
+					margin-bottom: 28px;
+				}
 			&:not(:last-child) {
 				margin-right: 53px;
 			}
