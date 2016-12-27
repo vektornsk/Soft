@@ -37,7 +37,7 @@ $(function() {
 	// header-fix
 	// to down
   $(window).scroll(function() {
-    if($(this).scrollTop() >= 290) {
+    if($(this).scrollTop() >= 90) {
       $('header').addClass('fix');
     }
     else{
@@ -48,7 +48,7 @@ $(function() {
 	// Cache selectors
 	var lastId,
   topMenu = $(".menu"),
-  topMenuHeight = topMenu.outerHeight()+70,
+  topMenuHeight = topMenu.outerHeight()+1,
   // All list items
   menuItems = topMenu.find("a"),
   // Anchors corresponding to menu items
