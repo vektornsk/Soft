@@ -64,7 +64,7 @@ $(function() {
 	    offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
 	  $('html, body').stop().animate({
 	    scrollTop: offsetTop
-	  }, 300, 'swing');
+	  }, 700, 'swing');
 	  e.preventDefault();
 	});
 
@@ -94,20 +94,20 @@ $(function() {
 	$('.arrow-down').click( function(){
 		var scroll_el = $(this).attr('href');
   	if ($(scroll_el).length !== 0) {
-	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
+	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 300, 'swing');
     }
 		return false;
 	});
 
 	// button-menu
 	$('.menu-burger').on('click', function(){
-		$(this).closest('nav').find('.menu-list').animate({right:'0'}, 500).addClass('open');
+		$(this).closest('nav').find('.menu-list').animate({right:'0'}, 300, 'swing').addClass('open');
 		$('body').css({overflowY: 'hidden'});
 	});
 
 	$('.menu-button').on('click', function(){
 		var menuSize = $(this).closest('nav').find('.menu-list').outerWidth();
-		$(this).closest('nav').find('.menu-list').animate({right: '-' + menuSize}, 500, function(){
+		$(this).closest('nav').find('.menu-list').animate({right: '-' + menuSize}, 300, 'swing', function(){
 			$(this).removeClass('open');
 		});
 		$('body').css({overflowY: 'auto'});

@@ -36,11 +36,13 @@
 				}
 				@media screen and (max-width: @break_sm){
 					width: 100%;
+					display: block;
 				}
 		}
 }
 
 .carousel-arrow {
+	background: @color-white;
 	.row-flex();
 	position: absolute;
 	z-index: 1;
@@ -50,6 +52,7 @@
 		right: 8px;
 	}
 	@media screen and (max-width: @break_xs){
+		background: transparent;
 		right: auto;
 		left: 15px;
 		width: 100%;
