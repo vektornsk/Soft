@@ -50,6 +50,9 @@ nav {
 				}
 			&:not(:last-child) {
 				margin-right: 53px;
+				@media screen and (max-width: @break_sm){
+					margin-right: 0;
+				}
 			}
 			&.active {
 				.menu__link {
@@ -127,7 +130,10 @@ nav {
 		&.open {
 			right: 0;
 			display: block;
-			box-shadow: 0px 0px 20px 1px @shadow;;
+			box-shadow: 0px 0px 20px 1px @shadow;
+			@media screen and (max-width: @break_lg){
+				box-shadow: none;
+			}
 		}
 }
 
