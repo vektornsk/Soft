@@ -37,17 +37,11 @@ nav {
 	.row-flex();
 	margin-left: 0;
 	margin-right: 0;
+	position: relative;
 		@media screen and (max-width: @break_sm){
 			flex-direction: column;
 		}
 		&__item {
-			@media screen and (max-width: @break_sm){
-				margin-right: 0 !important;
-				margin-bottom: 35px;
-			}
-			@media screen and (max-width: @break_xs){
-				margin-bottom: 28px;
-			}
 			&:not(:last-child) {
 				margin-right: 53px;
 			}
@@ -57,6 +51,7 @@ nav {
 							opacity: 1;
 						}
 					&:after {
+						content: none;
 				    top: 30px;
 				    background: @color-blue;
 				    opacity: 1;
@@ -128,4 +123,33 @@ nav {
 			display: block;
 			box-shadow: 0px 0px 20px 1px @shadow;;
 		}
+}
+
+.menu-line {
+	display: none;
+	position: absolute;
+	height: 2px;
+	width: 125px;
+	border: 1px solid @color-white;
+	border-width: 0 30px;
+	bottom: -15px;
+	left: 0;
+	background: @color-blue;
+	transition: transform 0.3s;
+	transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+}
+header.fix .menu__item:nth-child(1).active ~ .menu-line {
+	transform: translate3d(0, 0, 0);
+}
+header.fix .menu__item:nth-child(2).active ~ .menu-line {
+	transform: translate3d(100%, 0, 0);
+}
+header.fix .menu__item:nth-child(3).active ~ .menu-line {
+	transform: translate3d(200%, 0, 0);
+}
+header.fix .menu__item:nth-child(4).active ~ .menu-line {
+	transform: translate3d(300%, 0, 0);
+}
+header.fix .menu__item:nth-child(5).active ~ .menu-line {
+	transform: translate3d(400%, 0, 0);
 }

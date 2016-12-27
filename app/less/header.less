@@ -62,10 +62,30 @@ header.fix {
 			height: 24px;
 			background: url(../images/SVG/Burger_fix_menu.svg) no-repeat;
 		}
+		.menu__item {
+			width: 125px;
+			text-align: center;
+			margin: 0;
+				@media screen and (max-width: @break_sm){
+					width: auto;
+					text-align: left;
+					margin-bottom: 35px;
+				}
+				@media screen and (max-width: @break_xs){
+					margin-bottom: 28px;
+				}
+		}
+		.menu-line {
+			display: block;
+				@media screen and (max-width: @break_sm){
+					display: none;
+				}
+		}
 		.menu__link {
 			color: @color-blue;
 				&:after {
 					background: @color-blue;
+					content: none;
 				}
 		}
 }
